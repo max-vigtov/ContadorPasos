@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		505B0659280B7C0B005A1CD1 /* ContadorPasosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0658280B7C0B005A1CD1 /* ContadorPasosApp.swift */; };
+		505B065B280B7C0B005A1CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B065A280B7C0B005A1CD1 /* ContentView.swift */; };
+		505B065D280B7C0E005A1CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505B065C280B7C0E005A1CD1 /* Assets.xcassets */; };
+		505B0660280B7C0E005A1CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505B065F280B7C0E005A1CD1 /* Preview Assets.xcassets */; };
+		505B0662280B7C0E005A1CD1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0661280B7C0E005A1CD1 /* Persistence.swift */; };
+		505B0665280B7C0E005A1CD1 /* ContadorPasos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 505B0663280B7C0E005A1CD1 /* ContadorPasos.xcdatamodeld */; };
+		505B066E280B7C34005A1CD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B066D280B7C34005A1CD1 /* HealthKit.framework */; };
+		505B0676280B8213005A1CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505B0675280B8213005A1CD1 /* Assets.xcassets */; };
+		505B067C280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 505B067B280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		505B0681280B8214005A1CD1 /* ContadorPasosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0680280B8214005A1CD1 /* ContadorPasosApp.swift */; };
+		505B0683280B8214005A1CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0682280B8214005A1CD1 /* ContentView.swift */; };
+		505B0685280B8214005A1CD1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0684280B8214005A1CD1 /* NotificationController.swift */; };
+		505B0687280B8214005A1CD1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0686280B8214005A1CD1 /* NotificationView.swift */; };
+		505B0689280B8214005A1CD1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B0688280B8214005A1CD1 /* ComplicationController.swift */; };
+		505B068B280B8216005A1CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505B068A280B8216005A1CD1 /* Assets.xcassets */; };
+		505B068E280B8216005A1CD1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505B068D280B8216005A1CD1 /* Preview Assets.xcassets */; };
+		505B0693280B8216005A1CD1 /* ContadorPasosWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 505B0673280B820B005A1CD1 /* ContadorPasosWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		505B069E280B83CF005A1CD1 /* PasosModule in Frameworks */ = {isa = PBXBuildFile; productRef = 505B069D280B83CF005A1CD1 /* PasosModule */; };
+		505B06A0280B8416005A1CD1 /* PasosModule in Frameworks */ = {isa = PBXBuildFile; productRef = 505B069F280B8416005A1CD1 /* PasosModule */; };
+		505B06A3280B842E005A1CD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B06A2280B842E005A1CD1 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		505B067D280B8214005A1CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505B064D280B7C0B005A1CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505B067A280B8214005A1CD1;
+			remoteInfo = "ContadorPasosWatch WatchKit Extension";
+		};
+		505B0691280B8216005A1CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 505B064D280B7C0B005A1CD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 505B0672280B820B005A1CD1;
+			remoteInfo = ContadorPasosWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		505B0697280B8217005A1CD1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				505B067C280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B069B280B8217005A1CD1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				505B0693280B8216005A1CD1 /* ContadorPasosWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		505B0655280B7C0B005A1CD1 /* ContadorPasos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContadorPasos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B0658280B7C0B005A1CD1 /* ContadorPasosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorPasosApp.swift; sourceTree = "<group>"; };
+		505B065A280B7C0B005A1CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		505B065C280B7C0E005A1CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505B065F280B7C0E005A1CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		505B0661280B7C0E005A1CD1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		505B0664280B7C0E005A1CD1 /* ContadorPasos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContadorPasos.xcdatamodel; sourceTree = "<group>"; };
+		505B066B280B7C34005A1CD1 /* ContadorPasos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ContadorPasos.entitlements; sourceTree = "<group>"; };
+		505B066D280B7C34005A1CD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		505B0673280B820B005A1CD1 /* ContadorPasosWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContadorPasosWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B0675280B8213005A1CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505B067B280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ContadorPasosWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505B0680280B8214005A1CD1 /* ContadorPasosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorPasosApp.swift; sourceTree = "<group>"; };
+		505B0682280B8214005A1CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		505B0684280B8214005A1CD1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		505B0686280B8214005A1CD1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		505B0688280B8214005A1CD1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		505B068A280B8216005A1CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		505B068D280B8216005A1CD1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		505B068F280B8216005A1CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505B0690280B8216005A1CD1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		505B069C280B8286005A1CD1 /* PasosModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = PasosModule; path = ../../PasosModule; sourceTree = "<group>"; };
+		505B06A1280B842E005A1CD1 /* ContadorPasosWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ContadorPasosWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		505B06A2280B842E005A1CD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		505B0652280B7C0B005A1CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B066E280B7C34005A1CD1 /* HealthKit.framework in Frameworks */,
+				505B069E280B83CF005A1CD1 /* PasosModule in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B0678280B8214005A1CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B06A0280B8416005A1CD1 /* PasosModule in Frameworks */,
+				505B06A3280B842E005A1CD1 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		505B064C280B7C0B005A1CD1 = {
+			isa = PBXGroup;
+			children = (
+				505B0657280B7C0B005A1CD1 /* ContadorPasos */,
+				505B0674280B820C005A1CD1 /* ContadorPasosWatch */,
+				505B067F280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension */,
+				505B0656280B7C0B005A1CD1 /* Products */,
+				505B066C280B7C34005A1CD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		505B0656280B7C0B005A1CD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				505B0655280B7C0B005A1CD1 /* ContadorPasos.app */,
+				505B0673280B820B005A1CD1 /* ContadorPasosWatch.app */,
+				505B067B280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		505B0657280B7C0B005A1CD1 /* ContadorPasos */ = {
+			isa = PBXGroup;
+			children = (
+				505B069C280B8286005A1CD1 /* PasosModule */,
+				505B066B280B7C34005A1CD1 /* ContadorPasos.entitlements */,
+				505B0658280B7C0B005A1CD1 /* ContadorPasosApp.swift */,
+				505B065A280B7C0B005A1CD1 /* ContentView.swift */,
+				505B065C280B7C0E005A1CD1 /* Assets.xcassets */,
+				505B0661280B7C0E005A1CD1 /* Persistence.swift */,
+				505B0663280B7C0E005A1CD1 /* ContadorPasos.xcdatamodeld */,
+				505B065E280B7C0E005A1CD1 /* Preview Content */,
+			);
+			path = ContadorPasos;
+			sourceTree = "<group>";
+		};
+		505B065E280B7C0E005A1CD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				505B065F280B7C0E005A1CD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		505B066C280B7C34005A1CD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505B06A2280B842E005A1CD1 /* HealthKit.framework */,
+				505B066D280B7C34005A1CD1 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		505B0674280B820C005A1CD1 /* ContadorPasosWatch */ = {
+			isa = PBXGroup;
+			children = (
+				505B0675280B8213005A1CD1 /* Assets.xcassets */,
+			);
+			path = ContadorPasosWatch;
+			sourceTree = "<group>";
+		};
+		505B067F280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				505B06A1280B842E005A1CD1 /* ContadorPasosWatch WatchKit Extension.entitlements */,
+				505B0680280B8214005A1CD1 /* ContadorPasosApp.swift */,
+				505B0682280B8214005A1CD1 /* ContentView.swift */,
+				505B0684280B8214005A1CD1 /* NotificationController.swift */,
+				505B0686280B8214005A1CD1 /* NotificationView.swift */,
+				505B0688280B8214005A1CD1 /* ComplicationController.swift */,
+				505B068A280B8216005A1CD1 /* Assets.xcassets */,
+				505B068F280B8216005A1CD1 /* Info.plist */,
+				505B0690280B8216005A1CD1 /* PushNotificationPayload.apns */,
+				505B068C280B8216005A1CD1 /* Preview Content */,
+			);
+			path = "ContadorPasosWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		505B068C280B8216005A1CD1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				505B068D280B8216005A1CD1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		505B0654280B7C0B005A1CD1 /* ContadorPasos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505B0668280B7C0E005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasos" */;
+			buildPhases = (
+				505B0651280B7C0B005A1CD1 /* Sources */,
+				505B0652280B7C0B005A1CD1 /* Frameworks */,
+				505B0653280B7C0B005A1CD1 /* Resources */,
+				505B069B280B8217005A1CD1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505B0692280B8216005A1CD1 /* PBXTargetDependency */,
+			);
+			name = ContadorPasos;
+			packageProductDependencies = (
+				505B069D280B83CF005A1CD1 /* PasosModule */,
+			);
+			productName = ContadorPasos;
+			productReference = 505B0655280B7C0B005A1CD1 /* ContadorPasos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		505B0672280B820B005A1CD1 /* ContadorPasosWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505B0698280B8217005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasosWatch" */;
+			buildPhases = (
+				505B0671280B820B005A1CD1 /* Resources */,
+				505B0697280B8217005A1CD1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				505B067E280B8214005A1CD1 /* PBXTargetDependency */,
+			);
+			name = ContadorPasosWatch;
+			productName = ContadorPasosWatch;
+			productReference = 505B0673280B820B005A1CD1 /* ContadorPasosWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		505B067A280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 505B0694280B8217005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasosWatch WatchKit Extension" */;
+			buildPhases = (
+				505B0677280B8214005A1CD1 /* Sources */,
+				505B0678280B8214005A1CD1 /* Frameworks */,
+				505B0679280B8214005A1CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ContadorPasosWatch WatchKit Extension";
+			packageProductDependencies = (
+				505B069F280B8416005A1CD1 /* PasosModule */,
+			);
+			productName = "ContadorPasosWatch WatchKit Extension";
+			productReference = 505B067B280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		505B064D280B7C0B005A1CD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					505B0654280B7C0B005A1CD1 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					505B0672280B820B005A1CD1 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					505B067A280B8214005A1CD1 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 505B0650280B7C0B005A1CD1 /* Build configuration list for PBXProject "ContadorPasos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 505B064C280B7C0B005A1CD1;
+			productRefGroup = 505B0656280B7C0B005A1CD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				505B0654280B7C0B005A1CD1 /* ContadorPasos */,
+				505B0672280B820B005A1CD1 /* ContadorPasosWatch */,
+				505B067A280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		505B0653280B7C0B005A1CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B0660280B7C0E005A1CD1 /* Preview Assets.xcassets in Resources */,
+				505B065D280B7C0E005A1CD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B0671280B820B005A1CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B0676280B8213005A1CD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B0679280B8214005A1CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B068E280B8216005A1CD1 /* Preview Assets.xcassets in Resources */,
+				505B068B280B8216005A1CD1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		505B0651280B7C0B005A1CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B0662280B7C0E005A1CD1 /* Persistence.swift in Sources */,
+				505B065B280B7C0B005A1CD1 /* ContentView.swift in Sources */,
+				505B0665280B7C0E005A1CD1 /* ContadorPasos.xcdatamodeld in Sources */,
+				505B0659280B7C0B005A1CD1 /* ContadorPasosApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		505B0677280B8214005A1CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				505B0685280B8214005A1CD1 /* NotificationController.swift in Sources */,
+				505B0683280B8214005A1CD1 /* ContentView.swift in Sources */,
+				505B0689280B8214005A1CD1 /* ComplicationController.swift in Sources */,
+				505B0681280B8214005A1CD1 /* ContadorPasosApp.swift in Sources */,
+				505B0687280B8214005A1CD1 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		505B067E280B8214005A1CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505B067A280B8214005A1CD1 /* ContadorPasosWatch WatchKit Extension */;
+			targetProxy = 505B067D280B8214005A1CD1 /* PBXContainerItemProxy */;
+		};
+		505B0692280B8216005A1CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 505B0672280B820B005A1CD1 /* ContadorPasosWatch */;
+			targetProxy = 505B0691280B8216005A1CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		505B0666280B7C0E005A1CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		505B0667280B7C0E005A1CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		505B0669280B7C0E005A1CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContadorPasos/ContadorPasos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContadorPasos/Preview Content\"";
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hola! Queremos acceder al número de pasos que has dado";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		505B066A280B7C0E005A1CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ContadorPasos/ContadorPasos.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContadorPasos/Preview Content\"";
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hola! Queremos acceder al número de pasos que has dado";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		505B0695280B8217005A1CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ContadorPasosWatch WatchKit Extension/ContadorPasosWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContadorPasosWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContadorPasosWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ContadorPasosWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ContadorPasosWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hola! Queremos acceder a los pasos que has dado";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		505B0696280B8217005A1CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "ContadorPasosWatch WatchKit Extension/ContadorPasosWatch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ContadorPasosWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ContadorPasosWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ContadorPasosWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = ContadorPasosWatch_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Hola! Queremos acceder a los pasos que has dado";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		505B0699280B8217005A1CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ContadorPasosWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = ContadorPasosWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.dark.ContadorPasos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		505B069A280B8217005A1CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 638W9ZQV4S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = ContadorPasosWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = ContadorPasosWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.dark.ContadorPasos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dark.ContadorPasos.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		505B0650280B7C0B005A1CD1 /* Build configuration list for PBXProject "ContadorPasos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B0666280B7C0E005A1CD1 /* Debug */,
+				505B0667280B7C0E005A1CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505B0668280B7C0E005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B0669280B7C0E005A1CD1 /* Debug */,
+				505B066A280B7C0E005A1CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505B0694280B8217005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasosWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B0695280B8217005A1CD1 /* Debug */,
+				505B0696280B8217005A1CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		505B0698280B8217005A1CD1 /* Build configuration list for PBXNativeTarget "ContadorPasosWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				505B0699280B8217005A1CD1 /* Debug */,
+				505B069A280B8217005A1CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		505B069D280B83CF005A1CD1 /* PasosModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PasosModule;
+		};
+		505B069F280B8416005A1CD1 /* PasosModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PasosModule;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		505B0663280B7C0E005A1CD1 /* ContadorPasos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				505B0664280B7C0E005A1CD1 /* ContadorPasos.xcdatamodel */,
+			);
+			currentVersion = 505B0664280B7C0E005A1CD1 /* ContadorPasos.xcdatamodel */;
+			path = ContadorPasos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 505B064D280B7C0B005A1CD1 /* Project object */;
+}
